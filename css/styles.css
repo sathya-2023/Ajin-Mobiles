@@ -269,25 +269,49 @@ footer {
     font-size: 0.9rem;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 2rem;
+        color: #FFD700;
+        margin-left: auto;
+        z-index: 1001;
+    }
+
     .nav-links {
         display: none;
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
         background: #111;
+
         position: absolute;
         top: 60px;
-        left: 0;
-        width: 100%;
+        right: 0;
+        /* 👈 RIGHT SIDE */
+        width: 220px;
+        /* sidebar-style width */
         padding: 20px;
+
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.4);
     }
 
     .nav-links.show {
         display: flex;
     }
 
-    .menu-toggle {
-        display: block;
-        color: #FFD700;
+
+
+    .nav-links {
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        display: flex;
     }
+
+    .nav-links.show {
+        transform: translateX(0);
+    }
+
+
 }
