@@ -2,6 +2,8 @@
 
 A responsive, single-page storefront site for Ajin Mobiles (Vallioor). It highlights featured products, services, gallery, and contact details with a clean, modern layout.
 
+![Site preview](assets/imges/site_ss.png)
+
 ## Features
 - Responsive navigation with mobile menu
 - Hero section with brand messaging
